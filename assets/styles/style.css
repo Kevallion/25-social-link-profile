@@ -1,0 +1,100 @@
+/*****FONT ****/
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+/****Color****/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Inter;
+  font-size: 14px;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+}
+
+.main-card {
+  max-width: 384px;
+  background-color: hsl(0, 0%, 12%);
+  margin: 100px auto 100px;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+@media (max-width: 574px) {
+  .main-card {
+    max-width: 327px;
+  }
+}
+.main-card > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+.main-card img {
+  border-radius: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 88px;
+}
+.main-card ul {
+  min-height: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-card ul a {
+  text-decoration: none;
+  width: 100%;
+  min-height: 45px;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.main-card ul a:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+  color: hsl(0, 0%, 12%);
+}/*# sourceMappingURL=style.css.map */
